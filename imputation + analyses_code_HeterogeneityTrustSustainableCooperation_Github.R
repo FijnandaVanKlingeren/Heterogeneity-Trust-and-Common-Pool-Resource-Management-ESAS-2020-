@@ -617,22 +617,6 @@ hist(optimal_cov_format_trust$p_value,main = "p values for likelihood ratio test
 abline(v = 0.05,col = "red",lty = 2,lwd=2)
 
 
-#--------------------------------------------------------------------------------------------------------------------------
-# Saving and loading data 
-#--------------------------------------------------------------------------------------------------------------------------
-#Set working directory
-setwd("directory")
-
-
-#Save available case data
-save(dt_temp_clean_MI, file = "dt_temp_clean_MI.RData", compress = TRUE)
-
-#Save imputed data
-save(dt_MI,file = "dt_MI.RData",compress=TRUE)
-
-
-#Load imputed data
-load(file = "dt_MI.RData")
 
 
 #--------------------------------------------------------------------------------------------------------------------------
